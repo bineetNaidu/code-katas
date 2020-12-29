@@ -1,0 +1,29 @@
+{
+  "name": "code-katas",
+  "version": "1.0.0",
+  "description": "The code katas that i solve in codewars.com",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bineetNaidu/code-katas.git"
+  },
+  "keywords": [
+    "codewars",
+    "coding",
+    "javascript",
+    "typescript",
+    "algorithms"
+  ],
+  "author": "BineetNaidu <bineet.s.naidu@gmail.com> (https://bineetnaidu-io.web.app/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bineetNaidu/code-katas/issues"
+  },
+  "homepage": "https://github.com/bineetNaidu/code-katas#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
