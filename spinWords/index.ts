@@ -1,20 +1,24 @@
+/* eslint-disable import/prefer-default-export */
 /*
- * Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter
- * words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be
+ * Write a function that takes in a string of one or more words,
+ * and returns the same string, but with all five or more letter
+ * words reversed (Just like the name of this Kata).
+ * Strings passed in will consist of only letters and spaces. Spaces will be
  * included only when more than one word is present.
  */
 /*
- * Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This
+ * Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw"
+ * spinWords( "This is a test") => returns "This
  * is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
  */
 
 export class Kata {
   static spinWords(words: string) {
     const splitWords = words.split(' ');
-    let spinnedWord: string[] = [];
+    const spinnedWord: string[] = [];
 
     if (splitWords.length) {
-      for (let word of splitWords) {
+      for (const word of splitWords) {
         const lenghtOfWord = word.length;
 
         if (lenghtOfWord >= 5) {

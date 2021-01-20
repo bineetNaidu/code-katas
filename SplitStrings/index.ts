@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /**
  * Complete the solution so that it splits the string into pairs of two characters.
  * If the string contains an odd number of characters
@@ -10,7 +11,7 @@
 
 function splitStrings(str: string): string[] {
   const isEven = str.length % 2 === 0;
-  let result = [];
+  const result = [];
   if (isEven) {
     for (let i = 0; i < str.length; i++) {
       const element = str[i];

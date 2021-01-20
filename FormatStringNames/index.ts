@@ -21,13 +21,13 @@ type List = {
 
 const list = (names: List[]): string => {
   if (!names.length) return '';
-  let result = [];
-  for (let { name } of names) result.push(name);
+  const result = [];
+  for (const { name } of names) result.push(name);
   return result.length === 1
     ? `${result[0]}`
     : `${result.slice(0, result.length - 1).join(', ')} & ${
-        result[result.length - 1]
-      }`;
+      result[result.length - 1]
+    }`;
 };
 
 const res = list([
