@@ -15,7 +15,7 @@
     "algorithms"
   ],
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint ./**/*.ts"
   },
   "author": "BineetNaidu <bineet.s.naidu@gmail.com> (https://bineetnaidu-io.web.app/)",
   "license": "MIT",

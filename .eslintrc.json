@@ -16,6 +16,11 @@
     ],
     "rules": {
         "no-console": "off",
-        "no-restricted-syntax": "off"
+        "no-restricted-syntax": "off",
+        "no-unused-vars": "off",
+        "no-param-reassign": "off",
+        "no-return-assign": "off",
+        "no-continue": "off",
+        "eqeqeq": "warn"
     }
 }
