@@ -1,5 +1,7 @@
+/* eslint-disable import/prefer-default-export */
 /*
- * Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should
+ * Complete the function that accepts a string parameter,
+ * and reverses each word in the string. All spaces in the string should
  * be retained.
  *
  * Example
@@ -8,7 +10,7 @@
  */
 
 export function reverseWords(str: string): string {
-  //TODO your code here
+  // TODO your code here
   return str
     .split(' ')
     .map((s) => s.split('').reverse().join(''))

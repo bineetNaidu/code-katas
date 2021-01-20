@@ -1,6 +1,6 @@
-function isPangram(string) {
+function isPangramBestPractise(string) {
   string = string.toLowerCase();
-  return 'abcdefghijklmnopqrstuvwxyz'.split('').every(function (x) {
-    return string.indexOf(x) !== -1;
-  });
+  return 'abcdefghijklmnopqrstuvwxyz'
+    .split('')
+    .every((x) => string.indexOf(x) !== -1);
 }

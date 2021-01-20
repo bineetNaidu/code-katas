@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 /*
  * URL: https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/typescript
  *
@@ -17,19 +18,18 @@
 export function order(words: string): string {
   if (!words.length) return words;
 
-  let placementObj = [];
-  let results: string[] = [];
+  const placementObj = [];
+  const results: string[] = [];
   const splitWords = words.split(' ');
 
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < splitWords.length; i++) {
     const element = splitWords[i];
     const placementNum = Number(element.match(/[0-9]/gi)[0]);
     placementObj.push({ position: placementNum, text: element });
   }
 
-  placementObj.sort((a, b) => {
-    return a.position - b.position;
-  });
+  placementObj.sort((a, b) => a.position - b.position);
 
   placementObj.forEach((obj) => results.push(obj.text));
 

@@ -1,9 +1,10 @@
+/* eslint-disable import/prefer-default-export */
 export function xo(str: string) {
   let numOfxs: number = 0;
   let numOfos: number = 0;
   const strArr = str.toLowerCase().split('');
 
-  for (let s of strArr) {
+  for (const s of strArr) {
     if (s === 'x') {
       numOfxs += 1;
     }

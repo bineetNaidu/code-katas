@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 /*
  * An isogram is a word that has no repeating letters, consecutive or non-consecutive.
  * Implement a function that determines
@@ -10,7 +11,7 @@
 export function isIsogram(str: string) {
   const strArr = str.toLowerCase().split('');
   const uniqueSet = new Set(str.toLowerCase());
-  let uniqueArr: string[] = [];
+  const uniqueArr: string[] = [];
   uniqueSet.forEach((s) => uniqueArr.push(s));
 
   return JSON.stringify(strArr) === JSON.stringify(uniqueArr);
